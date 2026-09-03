@@ -1,5 +1,9 @@
 # NoLib Math Workbench
 
+**[Read the framework (PDF)](NoLibMath-framework.pdf)** | [Word version](NoLibMath%20framework.docx)
+
+A six-page guide to the unsigned logic, parser and mathematics, with equations and design diagrams.
+
 **[Download NoLibMath — current parser version](downloads/NoLibMath.zip?raw=true)**
 
 **[Download NoLibMath Legacy — original basic code](downloads/NoLibMath-Legacy.zip?raw=true)**
