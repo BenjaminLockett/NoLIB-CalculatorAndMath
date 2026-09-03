@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{8F2A6C41-1D7B-4E39-9C0A-5B77E4D31A62}</ProjectGuid>
+    <RootNamespace>NoLibMath</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &lt; '18.0'">v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &gt;= '18.0'">v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &lt; '18.0'">v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &gt;= '18.0'">v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &lt; '18.0'">v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &gt;= '18.0'">v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &lt; '18.0'">v143</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' &gt;= '18.0'">v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <NoLibIntermediateRoot Condition="'$(NoLibIntermediateRoot)'==''">$(ProjectDir)build\</NoLibIntermediateRoot>
+    <IntDir>$(NoLibIntermediateRoot)$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>NoLibMath</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreaded</RuntimeLibrary>
+      <Optimization Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Release'">MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <StackReserveSize>4194304</StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\NoLib\Complex\ComplexArithmetic.cpp" />
+    <ClCompile Include="Source\NoLib\Complex\ComplexElementary.cpp" />
+    <ClCompile Include="Source\NoLib\Complex\ComplexFormatting.cpp" />
+    <ClCompile Include="Source\NoLib\Complex\ComplexNumber.cpp" />
+    <ClCompile Include="Source\NoLib\Core\CheckedInteger.cpp" />
+    <ClCompile Include="Source\NoLib\Core\RealTraits.cpp" />
+    <ClCompile Include="Source\NoLib\Core\Types.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\Constants.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\Exponential.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\Logarithm.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\Powers.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\ScientificNumber.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\SquareRoot.cpp" />
+    <ClCompile Include="Source\NoLib\Scalar\Trigonometry.cpp" />
+    <ClCompile Include="Source\NoLib\Symbolic\IntegrationMethod.cpp" />
+    <ClCompile Include="Source\NoLib\Symbolic\SymbolicNode.cpp" />
+    <ClCompile Include="Source\NoLib\Text\IntegerFormatting.cpp" />
+    <ClCompile Include="Source\NoLib\Text\NumberParsing.cpp" />
+    <ClCompile Include="Source\NoLib\Text\RealFormatting.cpp" />
+    <ClCompile Include="Source\NoLib\Text\String.cpp" />
+    <ClCompile Include="Source\Workbench\Commands.cpp" />
+    <ClCompile Include="Source\Workbench\Console.cpp" />
+    <ClCompile Include="Source\Workbench\ExpressionParser.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\NoLib\Complex\ComplexArithmetic.hpp" />
+    <ClInclude Include="Header\NoLib\Complex\ComplexElementary.hpp" />
+    <ClInclude Include="Header\NoLib\Complex\ComplexFormatting.hpp" />
+    <ClInclude Include="Header\NoLib\Complex\ComplexNumber.hpp" />
+    <ClInclude Include="Header\NoLib\Core\CheckedInteger.hpp" />
+    <ClInclude Include="Header\NoLib\Core\RealTraits.hpp" />
+    <ClInclude Include="Header\NoLib\Core\Types.hpp" />
+    <ClInclude Include="Header\NoLib\Core\Utility.hpp" />
+    <ClInclude Include="Header\NoLib\Numerical\Differentiation.hpp" />
+    <ClInclude Include="Header\NoLib\Numerical\Ode.hpp" />
+    <ClInclude Include="Header\NoLib\Numerical\Quadrature.hpp" />
+    <ClInclude Include="Header\NoLib\Polynomial\Polynomial.hpp" />
+    <ClInclude Include="Header\NoLib\Polynomial\PolynomialArithmetic.hpp" />
+    <ClInclude Include="Header\NoLib\Polynomial\PolynomialCalculus.hpp" />
+    <ClInclude Include="Header\NoLib\Polynomial\PolynomialRoots.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\Constants.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\Exponential.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\Logarithm.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\Powers.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\ScientificNumber.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\SquareRoot.hpp" />
+    <ClInclude Include="Header\NoLib\Scalar\Trigonometry.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationCommon.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationExtensions.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationMethod.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationRational.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationVerification.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\PolynomialBridge.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\RischSubset.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicBuilder.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicComparison.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicCopy.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicDifferentiation.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicEvaluation.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicExpression.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicFormatting.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicNode.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicParser.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicSimplification.hpp" />
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicType.hpp" />
+    <ClInclude Include="Header\NoLib\Text\IntegerFormatting.hpp" />
+    <ClInclude Include="Header\NoLib\Text\NumberParsing.hpp" />
+    <ClInclude Include="Header\NoLib\Text\RealFormatting.hpp" />
+    <ClInclude Include="Header\NoLib\Text\String.hpp" />
+    <ClInclude Include="Header\NoLib\Text\StringStreamAdapters.hpp" />
+    <ClInclude Include="Header\NoLibMath.hpp" />
+    <ClInclude Include="Header\Workbench\Commands.hpp" />
+    <ClInclude Include="Header\Workbench\Console.hpp" />
+    <ClInclude Include="Header\Workbench\ExpressionParser.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

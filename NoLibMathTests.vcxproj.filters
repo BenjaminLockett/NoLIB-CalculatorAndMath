@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{086D3397-03B2-5FBE-B683-4C5C0E6EAA8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib">
+      <UniqueIdentifier>{CD9C7F87-2DB1-54F8-9D7C-6060D0065F51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Complex">
+      <UniqueIdentifier>{57298156-112A-5B50-82E7-E6C6D7A2AC5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Core">
+      <UniqueIdentifier>{E126844C-5D03-585C-9ECA-02616B154477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Numerical">
+      <UniqueIdentifier>{F3BB5313-C387-57B2-8E40-C497EDA857F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Polynomial">
+      <UniqueIdentifier>{C4423E62-3802-5AEE-B16B-47ADD5872111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Scalar">
+      <UniqueIdentifier>{FAF59759-A2AD-59C3-BEFE-942357E122C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Symbolic">
+      <UniqueIdentifier>{FEABE580-211B-5C5A-9A7F-A4A70652F6BF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\NoLib\Text">
+      <UniqueIdentifier>{495687DD-6D12-5B3A-B69C-07A82B6CA4D8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Workbench">
+      <UniqueIdentifier>{BA3FF595-7F85-519E-94E4-2183D67A2037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{926F66F3-3230-5536-A5D3-D2469305EF29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NoLib">
+      <UniqueIdentifier>{7A343AA8-FF61-54C8-9C50-41C8AEFB8017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NoLib\Complex">
+      <UniqueIdentifier>{5838A1BB-5DD4-566C-B51A-BB62223B7047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NoLib\Core">
+      <UniqueIdentifier>{711342A4-255B-594D-925B-E26BE2AA51EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NoLib\Scalar">
+      <UniqueIdentifier>{024855A9-6ABB-584F-AF8F-9D63C0677534}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NoLib\Symbolic">
+      <UniqueIdentifier>{3375FDCB-E7EB-50DA-A522-F6FA9D2286F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NoLib\Text">
+      <UniqueIdentifier>{E87DA9FF-4080-5480-870E-0A99377123B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Tests">
+      <UniqueIdentifier>{67ABB972-319F-5B9A-91B0-6C4EE0EFA31F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Workbench">
+      <UniqueIdentifier>{5BE1A7ED-6682-540B-9F9D-EC103B340C51}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\NoLib\Complex\ComplexArithmetic.cpp">
+      <Filter>Source\NoLib\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Complex\ComplexElementary.cpp">
+      <Filter>Source\NoLib\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Complex\ComplexFormatting.cpp">
+      <Filter>Source\NoLib\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Complex\ComplexNumber.cpp">
+      <Filter>Source\NoLib\Complex</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Core\CheckedInteger.cpp">
+      <Filter>Source\NoLib\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Core\RealTraits.cpp">
+      <Filter>Source\NoLib\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Core\Types.cpp">
+      <Filter>Source\NoLib\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\Constants.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\Exponential.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\Logarithm.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\Powers.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\ScientificNumber.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\SquareRoot.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Scalar\Trigonometry.cpp">
+      <Filter>Source\NoLib\Scalar</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Symbolic\IntegrationMethod.cpp">
+      <Filter>Source\NoLib\Symbolic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Symbolic\SymbolicNode.cpp">
+      <Filter>Source\NoLib\Symbolic</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Text\IntegerFormatting.cpp">
+      <Filter>Source\NoLib\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Text\NumberParsing.cpp">
+      <Filter>Source\NoLib\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Text\RealFormatting.cpp">
+      <Filter>Source\NoLib\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\NoLib\Text\String.cpp">
+      <Filter>Source\NoLib\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Workbench\Commands.cpp">
+      <Filter>Source\Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Workbench\ExpressionParser.cpp">
+      <Filter>Source\Workbench</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Tests\ParserTests.cpp">
+      <Filter>Source\Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\NoLib\Complex\ComplexArithmetic.hpp">
+      <Filter>Header\NoLib\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Complex\ComplexElementary.hpp">
+      <Filter>Header\NoLib\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Complex\ComplexFormatting.hpp">
+      <Filter>Header\NoLib\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Complex\ComplexNumber.hpp">
+      <Filter>Header\NoLib\Complex</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Core\CheckedInteger.hpp">
+      <Filter>Header\NoLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Core\RealTraits.hpp">
+      <Filter>Header\NoLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Core\Types.hpp">
+      <Filter>Header\NoLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Core\Utility.hpp">
+      <Filter>Header\NoLib\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Numerical\Differentiation.hpp">
+      <Filter>Header\NoLib\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Numerical\Ode.hpp">
+      <Filter>Header\NoLib\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Numerical\Quadrature.hpp">
+      <Filter>Header\NoLib\Numerical</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Polynomial\Polynomial.hpp">
+      <Filter>Header\NoLib\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Polynomial\PolynomialArithmetic.hpp">
+      <Filter>Header\NoLib\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Polynomial\PolynomialCalculus.hpp">
+      <Filter>Header\NoLib\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Polynomial\PolynomialRoots.hpp">
+      <Filter>Header\NoLib\Polynomial</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\Constants.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\Exponential.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\Logarithm.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\Powers.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\ScientificNumber.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\SquareRoot.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Scalar\Trigonometry.hpp">
+      <Filter>Header\NoLib\Scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationCommon.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationExtensions.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationMethod.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationRational.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\IntegrationVerification.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\PolynomialBridge.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\RischSubset.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicBuilder.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicComparison.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicCopy.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicDifferentiation.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicEvaluation.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicExpression.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicFormatting.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicNode.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicParser.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicSimplification.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Symbolic\SymbolicType.hpp">
+      <Filter>Header\NoLib\Symbolic</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Text\IntegerFormatting.hpp">
+      <Filter>Header\NoLib\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Text\NumberParsing.hpp">
+      <Filter>Header\NoLib\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Text\RealFormatting.hpp">
+      <Filter>Header\NoLib\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Text\String.hpp">
+      <Filter>Header\NoLib\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLib\Text\StringStreamAdapters.hpp">
+      <Filter>Header\NoLib\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\NoLibMath.hpp">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Workbench\Commands.hpp">
+      <Filter>Header\Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Workbench\Console.hpp">
+      <Filter>Header\Workbench</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Workbench\ExpressionParser.hpp">
+      <Filter>Header\Workbench</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
