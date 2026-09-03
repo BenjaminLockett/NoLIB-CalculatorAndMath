@@ -1,0 +1,21 @@
+# Visual Studio build output
+.vs/
+Debug/
+Release/
+x64/
+Win32/
+*.user
+*.suo
+*.aps
+*.VC.db
+*.VC.opendb
+
+# Object files, binaries, sanitizer output
+*.o
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.out
+build/

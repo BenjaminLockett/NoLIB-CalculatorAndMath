@@ -1,0 +1,25 @@
+
+  +------------------------------------------------------------------+
+  |   N O L I B   /   M A T H                        WORKBENCH  1.0  |
+  |   Type an expression. Make the math happen.                      |
+  +------------------------------------------------------------------+
+
+  DERIVE                   EVALUATE                 INTEGRATE
+  x^3 + 2x + 1             x = 2                    + C
+
+  Try   action[dirive(x^3 + 2x + 1)]
+  help / examples / history / theme(amber) / quit
+  ---------------------------------------------------------------
+
+  math > 
+  DERIVATIVE / d/dx
+  = 3x^2 + 2
+  Valid where the original expression is defined; angles are in radians.
+
+  math > 
+  VALUE
+  = 13
+  at x = 2
+
+  math > 
+  See you next calculation.
